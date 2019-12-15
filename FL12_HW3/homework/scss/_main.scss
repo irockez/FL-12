@@ -1,0 +1,199 @@
+body {
+    background: map-get($colors, bg-color);    
+    color: map-get($colors, text-color);
+    font-family: $h-font;
+    
+    a {
+        color: white;
+        font-family: $else-font;
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+        font-family: $else-font;
+    }
+
+    button {
+        @include button;
+        font-family: $else-font;
+    }
+}
+
+.landing-logo {
+    padding: 0 20px 0 0;
+    display: flex;
+
+    img {
+        padding: 20px 20px 20px 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 25px 0;
+        color: map-get($colors, text-in-color);            
+
+        span {
+            display: flex;
+            justify-content: center;
+            font-size: 8px;
+            font-weight: 200;
+        }  
+    }      
+}
+
+header {
+    background: $bg-img;
+    border-bottom-right-radius: 40% 45%;    
+    color: map-get($colors, text-out-color);
+
+    .header-wrap {
+        padding: 0 700px 100px 100px;    
+
+            .header_heading {
+            font-family: $h-font;
+            margin: 70px 0 35px 0;
+            width: 500px;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 1.05;
+            position: relative;
+            z-index: 1;
+            margin-top: 30px;        
+
+            &::before {
+                width: 210px;
+                height: 50px;
+                @include highlight;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        
+        .header_text {
+            width: 500px;
+            font-family: $else-font;
+            font-size: 12px;
+        }  
+
+        div:last-child{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+    }      
+}
+
+.section {
+    .section_text{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: $h-font;
+        position: relative;
+        color: map-get($colors, text-out-color);            
+
+        &::before {
+            width: 135px;
+            height: 40px;
+            @include highlight;
+            left: 51%;
+        }
+    }
+
+    .section_card_wrap{
+        display: block;
+        justify-content: center;
+        margin: auto;
+        width: 60%;    
+
+        .section_card {
+            display: flex;
+            background-color: map-get($colors, block-bg);
+            border: 10px solid map-get($colors, block-bg);
+            border-radius: $brd-radius;
+            margin-top: 10px;    
+        
+            &_img {
+                border-radius: $brd-radius;
+            }
+
+            .section_card_right_container {
+                text-align: center;
+                font-family: $else-font; 
+
+                .section_card_heading {
+                    color: white;
+                    font-weight: 600;
+                }
+
+                .section_card_text, .section_link {
+                    text-align: justify;
+                    margin: 0 70px;
+                    font-size: 12px;
+                    color: map-get($colors, text-in-color)
+                }
+            }
+        }
+    }
+
+    .section_banner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 50%;
+        padding: 0 80px 0 80px;
+        background-image: map-get($colors, grd-color);
+        border-radius: $brd-radius;    
+        transform: translateY(50%);    
+
+        &_heading {
+            color: map-get($colors, text-out-color);
+            font-family: $else-font;
+            font-size: 25px;
+            font-weight: bold;
+
+            &::before {
+                width: 58px;
+                height: 40px;
+                @include highlight;
+                left: 23%;
+            }
+        }
+
+        &_text {
+            color: map-get($colors, text-in-color);
+            font-family: $else-font;
+            font-size: 15px;
+            padding-bottom: 15px;
+        }
+
+        &_button {
+            margin: auto 0 auto 0;
+        }
+    }
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    background-color: map-get($colors, block-bg);
+    align-items: center;
+    padding-top: 100px;
+    color: map-get($colors, text-in-color);
+    font-family: $else-font;
+
+    .footer_logo {
+        @extend .landing-logo;
+    }
+
+    .footer_text {
+        width: 250px;
+        font-size: 12px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

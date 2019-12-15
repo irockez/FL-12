@@ -1,0 +1,157 @@
+body {
+  background: #21232e;
+  font-family: "Fresca", sans-serif; }
+  body a {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif; }
+  body .login {
+    display: flex;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif; }
+  body button {
+    width: 135px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #e3ac00;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif; }
+
+.landing-logo, .footer-wrap .footer_logo {
+  padding: 0 20px 0 0;
+  display: flex; }
+  .landing-logo img, .footer-wrap .footer_logo img {
+    padding: 20px 20px 20px 0;
+    height: 50px;
+    width: 50px; }
+  .landing-logo p, .footer-wrap .footer_logo p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px 0;
+    color: white; }
+    .landing-logo p span, .footer-wrap .footer_logo p span {
+      display: flex;
+      justify-content: center;
+      font-size: 8px;
+      font-weight: 200; }
+
+header {
+  background: url(../img/m-h-night.jpg) center/100% 170% no-repeat;
+  border-bottom-right-radius: 40% 45%;
+  color: white; }
+  header .header-wrap {
+    padding: 0 700px 100px 100px; }
+    header .header-wrap .header_heading {
+      font-family: "Fresca", sans-serif;
+      margin: 70px 0 35px 0;
+      width: 500px;
+      font-size: 50px;
+      font-weight: bold;
+      line-height: 1.05;
+      position: relative;
+      z-index: 1;
+      margin-top: 30px; }
+      header .header-wrap .header_heading::before {
+        width: 210px;
+        height: 50px;
+        background-color: #ff4e33;
+        display: block;
+        position: absolute;
+        content: '';
+        z-index: -1;
+        left: 0;
+        bottom: 0; }
+    header .header-wrap .header_text {
+      width: 500px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 12px; }
+    header .header-wrap div:last-child {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px; }
+
+.section .section_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Fresca", sans-serif;
+  position: relative;
+  color: white; }
+  .section .section_text::before {
+    width: 135px;
+    height: 40px;
+    background-color: #ff4e33;
+    display: block;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    left: 51%; }
+.section .section_card_wrap {
+  display: block;
+  justify-content: center;
+  margin: auto;
+  width: 60%; }
+  .section .section_card_wrap .section_card {
+    display: flex;
+    background-color: #3b3f50;
+    border: 10px solid #3b3f50;
+    border-radius: 5px;
+    margin-top: 10px; }
+    .section .section_card_wrap .section_card_img {
+      border-radius: 5px; }
+    .section .section_card_wrap .section_card .section_card_right_container {
+      text-align: center;
+      font-family: "Source Sans Pro", sans-serif; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+        color: white;
+        font-weight: 600; }
+      .section .section_card_wrap .section_card .section_card_right_container .section_card_text, .section .section_card_wrap .section_card .section_card_right_container .section_link {
+        text-align: justify;
+        margin: 0 70px;
+        font-size: 12px;
+        color: white; }
+.section .section_banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 50%;
+  padding: 0 80px 0 80px;
+  background-image: linear-gradient(90deg, #dda306, #96324f);
+  border-radius: 5px;
+  transform: translateY(50%); }
+  .section .section_banner_heading {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 25px;
+    font-weight: bold; }
+    .section .section_banner_heading::before {
+      width: 58px;
+      height: 40px;
+      background-color: #ff4e33;
+      display: block;
+      position: absolute;
+      content: '';
+      z-index: -1;
+      left: 23%; }
+  .section .section_banner_text {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    padding-bottom: 15px; }
+  .section .section_banner_button {
+    margin: auto 0 auto 0; }
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3b3f50;
+  align-items: center;
+  padding-top: 100px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif; }
+  .footer-wrap .footer_text {
+    width: 250px;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-right: 100px; }

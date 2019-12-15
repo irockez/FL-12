@@ -1,0 +1,31 @@
+$bg-img: url(../img/m-h-night.jpg) center/100% 170% no-repeat;
+$brd-radius: 5px;
+$h-font: 'Fresca', sans-serif;
+$else-font: 'Source Sans Pro', sans-serif;
+
+@mixin highlight {
+    background-color: #ff4e33;
+    display: block;
+    position: absolute;
+    content: '';
+    z-index: -1;
+}
+
+@mixin button ($brd-radius: 5px) {
+    width: 135px;
+    height: 48px;
+    border: none;
+    border-radius: $brd-radius;
+    color: white;
+    background: #e3ac00;
+    border-radius: $brd-radius;
+}
+
+$colors: 
+(
+    bg-color: #21232e,
+    text-out-color: white,
+    text-in-color: white,
+    block-bg: #3b3f50,
+    grd-color: linear-gradient(90deg, #dda306, #96324f) 
+)

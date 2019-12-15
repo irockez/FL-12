@@ -1,0 +1,31 @@
+$bg-img: url(../img/m-h-day.jpg) center/100% 170% no-repeat;
+$brd-radius: 5px;
+$h-font: 'Hind', sans-serif;
+$else-font: 'Source Sans Pro', sans-serif;
+
+@mixin highlight {
+    background-color: #14a0c7;
+    display: block;
+    position: absolute;
+    content: '';
+    z-index: -1;
+}
+
+@mixin button ($brd-radius: 5px) {
+    width: 135px;
+    height: 48px;
+    border: none;
+    border-radius: $brd-radius;
+    color: white;
+    background: #699900;
+    border-radius: $brd-radius;
+}
+
+$colors: 
+(
+    bg-color: white,
+    text-out-color: #282b39,
+    text-in-color: #dbdbdb,
+    block-bg: #282b39,
+    grd-color: linear-gradient(90deg, #699900, #3160ca) 
+)
