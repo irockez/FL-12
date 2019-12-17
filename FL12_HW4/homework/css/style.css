@@ -1,0 +1,148 @@
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 900px;
+    height: 550px;
+}
+
+button {
+    background: #fff;
+    padding: 12px 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50px;
+    outline: none;    
+    font-weight: 600;
+    font-family: 'sans-serif';
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p, .block-content button{
+    color: #777;
+}
+.container {
+    margin: 0 auto;
+    /* min-width: 900px; */
+    max-width: 900px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.fa {
+    padding-right: 5px;
+}
+
+hr {
+    margin: 50px 0;
+    opacity: 0.5;
+}
+
+/* HEADER */
+
+/* header-top */
+
+.logo a {
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 150px;
+}
+
+.menu ul {
+    display: flex;
+    opacity: 0.5;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu a:hover {
+    color: #bfba55;
+}
+/* header-content */
+
+.header-content {
+    background: url(../img/home-bg.jpg)center/cover;
+    text-align: center;
+    color: white;
+    padding: 300px 0;
+    margin: 0;
+    background-blend-mode: multiply;
+    background-color: grey;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    font-family: 'Serif';
+}
+
+.header-content p {
+    color: yellow;
+    font-size: 12px;
+}
+
+.header-content button {
+    margin-top: 20px;
+}
+
+/* MAIN */
+
+.block-content {
+    margin: 50px 0;
+
+}
+
+.post-info,
+.post-info ul {
+    display: flex;
+    align-items: center;
+}
+
+.post-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main li {
+    padding-right: 10px;
+}
+
+main li:first-child {
+    padding-left: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+}
+
+.footer-wrap {
+    
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 45%;
+    line-height: 150%;
+}
